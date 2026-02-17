@@ -1,0 +1,55 @@
+{
+  "name": "baileys",
+  "type": "module",
+  "version": "7.0.0-rc.9",
+  "description": "A WebSockets library for interacting with WhatsApp Web",
+  "keywords": [
+    "whatsapp",
+    "automation"
+  ],
+  "homepage": "https://github.com/WhiskeySockets/Baileys/",
+  "repository": {
+    "url": "git@github.com:WhiskeySockets/Baileys.git"
+  },
+  "license": "MIT",
+  "author": "Rajeh Taher",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*",
+    "WAProto/**/*",
+    "engine-requirements.js"
+  ],
+  "scripts": {
+    "preinstall": "node ./engine-requirements.js"
+  },
+  "dependencies": {
+    "@cacheable/node-cache": "^2.0.1",
+    "@hapi/boom": "^10.0.1",
+    "async-mutex": "^0.5.0",
+    "libsignal": "github:whiskeysockets/libsignal-node",
+    "lru-cache": "^11.2.6",
+    "music-metadata": "^11.2.0",
+    "p-queue": "^9.1.0",
+    "pino": "^9.6",
+    "protobufjs": "^8.0.0",
+    "whatsapp-rust-bridge": "0.5.2",
+    "ws": "^8.18.0"
+  },
+  "peerDependencies": {
+    "audio-decode": "^2.2.3",
+    "jimp": "^1.6.0",
+    "link-preview-js": "^4.0.0",
+    "sharp": "*"
+  },
+  "peerDependenciesMeta": {
+    "audio-decode": {
+      "optional": true
+    },
+    "jimp": {
+      "optional": true
+    },
+    "link-preview-js": {
+      "optional": true
+    }
+  }
+}
